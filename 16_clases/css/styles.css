@@ -1,0 +1,64 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container {
+  width: 95%;
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid #0d6efd77;
+  border-radius: 20px;
+}
+
+#create_form {
+  width: 48%;
+}
+
+#regs {
+  width: 100%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#regs section {
+  min-width: 350px;
+}
+
+#regs #students {
+  width: 48%;
+  height: 200px;
+  background-color: yellowgreen;
+}
+
+#regs #teachers {
+  width: 48%;
+  height: 200px;
+  background-color: yellow;
+}
+
+@media (max-width: 750px) {
+  #create_form {
+    width: 350px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

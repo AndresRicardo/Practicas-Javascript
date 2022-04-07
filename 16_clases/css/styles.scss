@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 95%;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #0d6efd77;
+    border-radius: 20px;
+}
+
+#create_form {
+    width: 48%;
+}
+
+#regs {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    section {
+        min-width: 350px;
+    }
+
+    #students {
+        width: 48%;
+        height: 200px;
+        background-color: yellowgreen;
+    }
+    #teachers {
+        width: 48%;
+        height: 200px;
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 750px) {
+    #create_form {
+        width: 350px;
+    }
+}
