@@ -1,0 +1,11 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de comrpas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="productos">
+        <button class="item" id="banano" data-fruta="banano">
+            Banano</button>
+
+        <button class="item" id="manzana" data-fruta="manzana">
+            Manzana</button>
+
+        <button class="item" id="pera" data-fruta="pera">
+            Pera</button>
+
+        <button class="item" id="pina" data-fruta="pina">
+            Piña</button>
+    </div>
+
+    <div id="contenidoCarrito">
+        <ul id="listaCarrito">
+            <template id="liCarritoTemplate">
+                <li><b>Producto: </b> <span>Cantidad</span></li>
+            </template>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

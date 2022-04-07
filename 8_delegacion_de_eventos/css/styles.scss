@@ -1,0 +1,18 @@
+div {
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#padre {
+    border: 3px solid blue;
+}
+#hijo {
+    border: 2px solid green;
+}
+#nieto {
+    border: 2px solid red;
+}
