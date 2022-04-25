@@ -33,27 +33,80 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #regs section {
-  min-width: 350px;
+  min-width: 300px;
+  text-align: center;
 }
 
 #regs #students {
   width: 48%;
-  height: 200px;
-  background-color: yellowgreen;
 }
 
 #regs #teachers {
   width: 48%;
-  height: 200px;
-  background-color: yellow;
+}
+
+.card {
+  min-width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.card .cardHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: flex-end;
+}
+
+.card .type {
+  text-align: left;
+}
+
+.card .id {
+  text-align: left;
+}
+
+.card .age {
+  text-align: left;
+}
+
+.studentCard {
+  background-color: #ccc;
+}
+
+.studentCard .cardButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teacherCard {
+  background-color: #444;
+  color: #fff;
+}
+
+.teacherCard .cardButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media (max-width: 750px) {

@@ -23,22 +23,57 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 
     section {
-        min-width: 350px;
+        min-width: 300px;
+        text-align: center;
     }
 
     #students {
         width: 48%;
-        height: 200px;
-        background-color: yellowgreen;
     }
     #teachers {
         width: 48%;
-        height: 200px;
-        background-color: yellow;
+    }
+}
+
+.card {
+    min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    .cardHead {
+        display: flex;
+        justify-content: space-between;
+        justify-items: flex-end;
+    }
+
+    .type {
+        text-align: left;
+    }
+    .id {
+        text-align: left;
+    }
+    .age {
+        text-align: left;
+    }
+}
+
+.studentCard {
+    background-color: #ccc;
+    .cardButtons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.teacherCard {
+    background-color: #444;
+    color: #fff;
+    .cardButtons {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 

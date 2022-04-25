@@ -17,12 +17,12 @@
 <body>
     <div id="container">
 
-        <form id="create_form">
+        <form id="create_form" validate>
             <fieldset enable form="create_form">
                 <legend>Characters create form</legend>
                 <div class="mb-3">
-                    <label for="disabledSelect" class="form-label">Role</label>
-                    <select id="disabledSelect" class="form-select" aria-placeholder="Please select a role" enable>
+                    <label for="roleSelect" class="form-label">Role</label>
+                    <select id="roleSelect" class="form-select" aria-placeholder="Please select a role" enable>
                         <option>Student</option>
                         <option>Teacher</option>
                     </select>
@@ -31,22 +31,56 @@
                     <label for="reg_name" class="form-label">New character name</label>
                     <input type="text" id="reg_name" class="form-control" placeholder="For example: Ricardo">
                 </div>
-                <button type="submit" class="btn btn-primary">Create</button>
+                <div class="mb-3">
+                    <label for="reg_age" class="form-label">New character age</label>
+                    <input type="text" id="reg_age" class="form-control" placeholder="For example: 34">
+                </div>
+                <button type="submit" class="btn btn-primary" id="createButton">Create</button>
             </fieldset>
         </form>
 
         <div id="regs">
             <section id="students">
-                <div class="card">
+                <h2>Students</h2>
+            </section>
 
-                </div>
+            <section id="teachers">
+                <h2>Teachers</h2>
 
             </section>
-            <section id="teachers"></section>
         </div>
     </div>
 
     <template id="studentsTemplate">
+        <div class="studentCard card">
+            <div class="cardHead">
+                <h4 class="studentName">Jaunito</h4>
+                <div class="studentState" data-status="reprobado">Reprovate</div>
+            </div>
+            <p class="type" data-type="student"><strong>Student</strong></p>
+            <p class="id" data-id="0">Id: 0</p>
+            <p class="age" data-age="22">22 Years old</p>
+            <div class="cardButtons">
+                <button class="btn btn-success cardButtonAprobar">Approve</button>
+                <button class="btn btn-warning cardButtonReprobar disabled">Reprobate</button>
+                <button class="btn btn-danger cardButtonEliminar">Delete</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="teachersTemplate">
+        <div class="teacherCard card">
+            <div class="cardHead">
+                <h4 class="teacherName">Julio</h4>
+                <div class="teacherState" data-status="planta">Plant teacher</div>
+            </div>
+            <p class="type" data-type="teacher"><strong>Teacher</strong></p>
+            <p class="id" data-id="0">Id: 0</p>
+            <p class="age" data-age="40">40 Years olds</p>
+            <div class="cardButtons">
+                <button class="btn btn-danger cardButtonEliminar">Delete</button>
+            </div>
+        </div>
     </template>
 
     <script src="js/app.js"></script>
